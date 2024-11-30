@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(180deg, white 33%, darkgreen 33% 66%, red 33%);
+    font-family: "UnifrakturMaguntia", cursive;
+    color: gold;
+    text-shadow: 1px 1px darkgreen;
+}
+
+header, main, footer{
+    width: 100%;
+    padding: 0 400px;
+}
+
+.container{
+    background-color: red;
+    padding: 25px 30px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 5px 6px rgb(0, 197, 191), 10px 10px rgb(0, 232, 197);
+}
+
+header .title{
+    font-size: 30px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+
+header .subtitle{
+    font-size: 15px;
+}
+
+header{
+    padding-top: 25px;
+    margin-bottom: 50px;
+}
+
+.card{
+    width: 422px;
+    height: 200px;
+    background-color: #ee8700;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+    transition: 3s;
+}
+
+.card:hover{
+    scale: 110%;
+    rotate: 20deg;
+    box-shadow: 10px 10px 4px 4 px;
+}
+
+.card-img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 5px;
+    height: 70%;
+}
+
+.card-title{
+    font-size: 25px;
+}
+
+.card-price{
+    font-size: 15px;
+    margin-bottom: 1px;
+}
+
+.card-buttom{
+    bottom: 2px solid;
+    width: fit-content;
+    padding: 2px 2px; 
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px;   
+    padding-right: 25px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card-buttom::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("img/icons/cart.png");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+}
+
+main .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+
+main{
+    margin-bottom: 55px;
+}
